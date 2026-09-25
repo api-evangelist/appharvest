@@ -1,7 +1,6 @@
 aid: appharvest
 name: AppHarvest
-description: 'AppHarvest is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'AppHarvest is an American agriculture technology company that builds large‑scale indoor farms using hydroponic vertical farming methods. Founded in 2017, it aims to produce pesticide‑free, sustainably grown produce year‑round, reducing water usage and transportation emissions. The company operates commercial farms in Kentucky and other locations, supplying fresh vegetables to grocery retailers and food service operators.'
 url: https://raw.githubusercontent.com/api-evangelist/appharvest/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -19,5 +18,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/appharvest-domain-security.yml
 - type: Website
   url: https://forgeglobal.com/appharvest_stock/
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: "API documentation is not machine-readable; attempts to fetch OpenAPI spec returned a maintenance HTML page."
+  evidence:
+    - url: https://appharvest.com/openapi.json
+      status: 404
+  checked: 2026-09-25
